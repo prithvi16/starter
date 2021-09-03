@@ -54,7 +54,7 @@ group :development, :test do
   # Environment variables
   gem 'dotenv-rails'
   # Mail
-  gem 'mailcatcher'
+  gem "letter_opener"
   # beautify html code
   gem 'htmlbeautifier'
 end

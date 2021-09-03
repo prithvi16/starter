@@ -88,4 +88,7 @@ Rails.application.configure do
     # Bullet.stacktrace_excludes = [ 'their_gem', 'their_middleware', ['my_file.rb', 'my_method'], ['my_file.rb', 16..20] ]
     # Bullet.slack = { webhook_url: 'http://some.slack.url', channel: '#default', username: 'notifier' }
   end
+
+  config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.perform_deliveries = true
 end
