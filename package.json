@@ -34,8 +34,10 @@
     "@tailwindcss/typography": "^0.4.1",
     "autoprefixer": "^10.3.4",
     "jquery": "^3.5.0",
+    "notyf": "^3.10.0",
     "postcss": "^8.3.6",
     "postcss-loader": "^4.2.0",
+    "stimulus": "^2.0.0",
     "turbolinks": "^5.2.0"
   },
   "version": "0.1.0",

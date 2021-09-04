@@ -10,8 +10,7 @@
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <%= render "pages/flash", notice: notice, alert: alert %>
     <%= yield %>
   </body>
 </html>
