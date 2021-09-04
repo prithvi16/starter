@@ -1,9 +1,25 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
-  purge: [],
-  theme: {
-    extend: {},
+  mode: 'jit',
+  purge: ['./app/**/*.html.erb',
+    './app/**/*.rb',
+    './config/initializers/*.rb',
+    './app/**/*.js'
+  ],
+  theme: {},
+  variants: {
+    extend: {
+      fontWeight: ['hover', 'focus'],
+      backgroundColor: ['group-focus', 'active'],
+      borderColor: ['group-focus'],
+      boxShadow: ['group-focus'],
+      opacity: ['group-focus'],
+      textColor: ['group-focus', 'active'],
+      textDecoration: ['group-focus'],
+    },
   },
-  variants: {},
-  plugins: [require('@tailwindcss/ui'),
-    ],
+  plugins: [require('@tailwindcss/forms'),
+            require('@tailwindcss/typography'),
+            require('@tailwindcss/aspect-ratio'),],
 }
